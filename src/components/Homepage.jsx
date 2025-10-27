@@ -21,7 +21,8 @@ const Homepage = () => {
     content: {
       width: '100%',
       maxWidth: '28rem',
-      textAlign: 'center'
+      textAlign: 'center',
+      margin: '0 auto'
     },
     logoSection: {
       marginBottom: '2rem'
@@ -46,10 +47,22 @@ const Homepage = () => {
       color: 'white',
       fontSize: 'clamp(2.5rem, 6vw, 3.5rem)',
       fontWeight: '300',
-      marginBottom: '2.5rem',
+      marginBottom: '0.5rem',
       lineHeight: '1.1',
       fontFamily: 'Helvetica, Arial, sans-serif',
-      whiteSpace: 'nowrap'
+      textAlign: 'center',
+      margin: '0 auto 0.5rem auto',
+      display: 'block',
+      width: '100%'
+    },
+    subheading: {
+      color: 'white',
+      fontSize: '0.875rem',
+      fontWeight: '300',
+      marginBottom: '2.5rem',
+      fontFamily: 'Helvetica, Arial, sans-serif',
+      textAlign: 'center',
+      opacity: '0.8'
     },
     formContainer: {
       marginBottom: '2rem',
@@ -103,6 +116,12 @@ const Homepage = () => {
           </div>
           <img src={logoText} alt="Athens" style={styles.logoTextImage} className="mobile-logo-text" />
         </div>
+
+        {/* Main heading */}
+        <h2 style={styles.heading} className="mobile-heading">
+          The AI Learning Space
+        </h2>
+        <p style={styles.subheading}>AI Art Philosophy</p>
 
         {/* Redirect button */}
         <div style={styles.formContainer}>
